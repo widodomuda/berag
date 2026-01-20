@@ -96,7 +96,7 @@ Answer:"""
             ["ollama", "run", model, prompt],
             capture_output=True,
             text=True,
-            timeout=60
+            timeout=600
         )
         
         if result.returncode != 0:
